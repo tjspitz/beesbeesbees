@@ -38,6 +38,7 @@ describe('HoneyMakerBee class functionality', function() {
 
   it('should have a `makeHoney` method that adds `1` to that honeyBee\'s honeyPot', function() {
     expect(honeyBee.makeHoney).to.be.a('function');
+    debugger;
     honeyBee.makeHoney();
     expect(honeyBee.honeyPot).to.equal(1);
     honeyBee.makeHoney();
