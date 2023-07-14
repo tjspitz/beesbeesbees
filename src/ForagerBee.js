@@ -1,5 +1,4 @@
 var ForagerBee = function() {
-  // call the parent class (still Bee)
   Bee.call(this);
   this.age = 10;
   this.job = 'find pollen';
@@ -7,12 +6,8 @@ var ForagerBee = function() {
   this.treasureChest = [];
 };
 
-// inherit methods
-ForagerBee.prototype = Object.create(Bee.prototype)
-
-// point constructor to self
-ForagerBee.prototype.constructor = ForagerBee
-
-ForagerBee.prototype.forage = function(treasure) {
-  this.treasureChest.push(treasure);
-}
+ForagerBee.prototype = Object.create(Bee.prototype);
+ForagerBee.prototype.constructor = ForagerBee;
+ForagerBee.prototype.forage = function() {
+  this.treasureChest.push('treasure');
+};

@@ -5,6 +5,5 @@ var Grub = function() {
 };
 
 Grub.prototype.eat = function() {
-  // placeholder
   return 'nom nom nom';
 }
